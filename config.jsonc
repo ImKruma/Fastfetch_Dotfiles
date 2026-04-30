@@ -1,25 +1,20 @@
 {
   "$schema": "https://github.com/fastfetch-cli/fastfetch/raw/master/doc/json_schema.json",
-
-/////===== LOGO =====/////
-
+  /////===== LOGO =====/////
   "logo": {
-  "type": "auto",
-  "source": "$(ls ~/.config/fastfetch/png/* | shuf -n 1)",
+    "type": "auto",
+    "source": "$(ls ~/.config/fastfetch/png/* | shuf -n 1)",
     "width": 30,
-  "padding": {
+    "padding": {
       "top": 3,
       "left": 4,
       "right": 4
     },
   },
-
   "display": {
     "separator": " ",
-    },
-
-/////===== MODULES =====/////
-
+  },
+  /////===== MODULES =====/////
   "modules": [
     {
       "type": "custom",
@@ -59,7 +54,7 @@
     },
     {
       "type": "packages",
-      "key": "│ {#34} Packages{#keys}{#34} │",
+      "key": "│ {#34}󰏗 Packages{#keys}{#34} │",
       "keyColor": "blue",
       "disabled": [
         "apk"
@@ -67,58 +62,58 @@
       "combined": false
     },
     {
-    "type": "custom",
-    "key": "╰────────────╯",
-    "keyColor": "blue"
+      "type": "custom",
+      "key": "╰────────────╯",
+      "keyColor": "blue"
     },
-"break",
+    "break",
     {
       "type": "custom",
       "key": "╭────────────╮",
       "keyColor": ""
     },
     {
-    "type": "memory",
-    "key": "│ {#35} Memory  {#keys} │",
+      "type": "memory",
+      "key": "│ {#35} Memory  {#keys} │",
     },
     {
-    "type": "disk",
-    "key": "│ {#35} Disk    {#keys} │",
+      "type": "disk",
+      "key": "│ {#35} Disk    {#keys} │",
     },
     {
-    "type": "swap",
-    "key": "│ {#35} Swap    {#keys} │",
+      "type": "swap",
+      "key": "│ {#35} Swap    {#keys} │",
     },
     {
-    "type": "cpu",
-    "key": "│ {#35} CPU     {#keys} │",
+      "type": "cpu",
+      "key": "│ {#35} CPU     {#keys} │",
     },
     {
-    "type": "gpu",
-    "key": "│ {#35} GPU     {#keys} │",
+      "type": "gpu",
+      "key": "│ {#35} GPU     {#keys} │",
     },
     {
-    "type": "host",
-    "key": "│ {#35}󰌢 Chasis  {#keys} │",
+      "type": "host",
+      "key": "│ {#35}󰌢 Chasis  {#keys} │",
     },
     {
-    "type": "battery",
-    "key": "│ {#35} Battery {#keys} │",
+      "type": "battery",
+      "key": "│ {#35} Battery {#keys} │",
     },
     {
-    "type": "custom",
-    "key": "╰────────────╯"
+      "type": "custom",
+      "key": "╰────────────╯"
     },
-"break",
+    "break",
     {
-    "type": "colors",
-    "key": " ",
-    "keyIcon": "",
-    "symbol": "circle",
-    "paddingLeft": 20,
-    "block": {
-      "width": 3,
-      "range": [
+      "type": "colors",
+      "key": " ",
+      "keyIcon": "",
+      "symbol": "circle",
+      "paddingLeft": 20,
+      "block": {
+        "width": 3,
+        "range": [
           0,
           15
         ]
