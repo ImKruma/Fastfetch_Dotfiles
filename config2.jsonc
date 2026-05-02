@@ -1,0 +1,103 @@
+// This config was made by Gemini, and retouched a little by me
+{
+  "$schema": "https://github.com/fastfetch-cli/fastfetch/raw/dev/doc/json_schema.json",
+  "logo": {
+    "type": "auto",
+    "source": "$( ls ~/.config/fastfetch/png/* ~/.config/fastfetch/ascii/* | shuf -n 1)",
+    "height": 12,
+    "padding": {
+      "top": 2,
+      "left": 2
+    }
+  },
+  "display": {
+    "separator": " "
+  },
+  "modules": [
+    {
+      "type": "custom",
+      "key": "╭────────── System ──────────",
+      "keyColor": "magenta"
+    },
+    {
+      "type": "title",
+      "key": "│ {#35} User    {#keys}{#35} │ ➜",
+      "format": "{user-name}@{host-name}",
+      "keyColor": "magenta"
+    },
+    {
+      "type": "os",
+      "key": "│ {#35}󰣇 OS      {#keys}{#35} │ ➜",
+      "keyColor": "magenta"
+    },
+    {
+      "type": "kernel",
+      "key": "│ {#35}󰒋 Kernel  {#keys}{#35} │ ➜",
+      "keyColor": "magenta"
+    },
+    {
+      "type": "uptime",
+      "key": "│ {#35}󱎫 Uptime  {#keys}{#35} │ ➜",
+      "keyColor": "magenta"
+    },
+    {
+      "type": "wm",
+      "key": "│ {#35} WM      {#keys}{#35} │ ➜",
+      "keyColor": "magenta"
+    },
+    {
+      "type": "shell",
+      "key": "│ {#35} Shell   {#keys}{#35} │ ➜",
+      "keyColor": "magenta"
+    },
+    {
+      "type": "custom",
+      "key": "╰────────────────────────────",
+      "keyColor": "magenta"
+    },
+    "break",
+    {
+      "type": "custom",
+      "key": "╭───────── Hardware ─────────",
+      "keyColor": "cyan"
+    },
+    {
+      "type": "cpu",
+      "key": "│ {#36} CPU     {#keys} {#36}│ ➜",
+      "keyColor": "cyan"
+    },
+    {
+      "type": "gpu",
+      "key": "│ {#36}󰢮 GPU     {#keys} {#36}│ ➜",
+      "keyColor": "cyan"
+    },
+    {
+      "type": "memory",
+      "key": "│ {#36} RAM     {#keys} {#36}│ ➜",
+      "keyColor": "cyan"
+    },
+    {
+      "type": "display",
+      "key": "│ {#36}󰍹 Display {#keys} {#36}│ ➜",
+      "keyColor": "cyan"
+    },
+    {
+      "type": "battery",
+      "key": "│ {#36} Battery {#keys} {#36}│ ➜",
+      "keyColor": "cyan"
+    },
+    {
+      "type": "custom",
+      "key": "╰────────────────────────────",
+      "keyColor": "cyan"
+    },
+    "break",
+    {
+      "type": "colors",
+      "symbol": "rect",
+      "block": {
+        "width": 2
+      }
+    }
+  ]
+}
