@@ -1,18 +1,18 @@
 {
-  "$schema": "https://github.com/fastfetch-cli/fastfetch/raw/master/doc/json_schema.json",
   /////===== LOGO =====/////
   "logo": {
     "type": "auto",
-    "source": "$(ls ~/.config/fastfetch/png/* | shuf -n 1)",
-    "width": 30,
+    "source": "$( ls ~/.config/fastfetch/png/* ~/.config/fastfetch/ascii/* | shuf -n 1)",
+    // If you want to use Ascii only just remove the png path, and vice versa
+    "height": 12,
     "padding": {
       "top": 3,
-      "left": 4,
-      "right": 4
-    },
+      "left": 2,
+      "right": 2
+    }
   },
   "display": {
-    "separator": " ",
+    "separator": " "
   },
   /////===== MODULES =====/////
   "modules": [
@@ -74,31 +74,31 @@
     },
     {
       "type": "memory",
-      "key": "│ {#35} Memory  {#keys} │",
+      "key": "│ {#35} Memory  {#keys} │"
     },
     {
       "type": "disk",
-      "key": "│ {#35} Disk    {#keys} │",
+      "key": "│ {#35} Disk    {#keys} │"
     },
     {
       "type": "swap",
-      "key": "│ {#35} Swap    {#keys} │",
+      "key": "│ {#35} Swap    {#keys} │"
     },
     {
       "type": "cpu",
-      "key": "│ {#35} CPU     {#keys} │",
+      "key": "│ {#35} CPU     {#keys} │"
     },
     {
       "type": "gpu",
-      "key": "│ {#35} GPU     {#keys} │",
+      "key": "│ {#35} GPU     {#keys} │"
     },
     {
       "type": "host",
-      "key": "│ {#35}󰌢 Chasis  {#keys} │",
+      "key": "│ {#35}󰌢 Chasis  {#keys} │"
     },
     {
       "type": "battery",
-      "key": "│ {#35} Battery {#keys} │",
+      "key": "│ {#35} Battery {#keys} │"
     },
     {
       "type": "custom",
