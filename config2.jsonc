@@ -27,7 +27,7 @@
     },
     {
       "type": "os",
-      "key": "│ {#35}󰣇 OS      {#keys}{#35} │ ➜",
+      "key": "│ {#35}{icon} OS      {#keys}{#35} │ ➜",
       "keyColor": "magenta"
     },
     {
