@@ -4,9 +4,9 @@
     "type": "auto",
     "source": "$( ls ~/.config/fastfetch/png/* ~/.config/fastfetch/ascii/* | shuf -n 1)",
     // If you want to use Ascii only just remove the png path, and vice versa
-    "height": 12,
+    "height": 10,
     "padding": {
-      "top": 3,
+      "top": 4,
       "left": 2,
       "right": 2
     }
@@ -22,7 +22,7 @@
       "keyColor": "blue"
     },
     {
-      "key": "│ {#34} user    {#34} │",
+      "key": "│  user    {#34} │",
       "type": "title",
       "format": "{host-name}",
       "keyColor": "blue"
@@ -34,27 +34,28 @@
     },
     {
       "type": "os",
-      "key": "│ {#34}{icon} OS      {#keys}{#34} │",
+      "key": "│ {icon} OS      {#keys}{#34} │",
+      "format": "{#38}{name} {#keys} {#34}",
       "keyColor": "blue"
     },
     {
       "type": "kernel",
-      "key": "│ {#34} Kernel  {#keys}{#34} │",
+      "key": "│  Kernel  {#keys}{#34} │",
       "keyColor": "blue"
     },
     {
       "type": "de",
-      "key": "│ {#34} DE      {#keys}{#34} │",
+      "key": "│  DE      {#keys}{#34} │",
       "keyColor": "blue"
     },
     {
       "type": "wm",
-      "key": "│ {#34} WM      {#keys}{#34} │",
+      "key": "│  WM      {#keys}{#34} │",
       "keyColor": "blue"
     },
     {
       "type": "packages",
-      "key": "│ {#34}󰏗 Packages{#keys}{#34} │",
+      "key": "│ 󰏗 Packages{#keys}{#34} │",
       "keyColor": "blue",
       "disabled": [
         "apk"
@@ -69,36 +70,40 @@
     "break",
     {
       "type": "custom",
-      "key": "╭────────────╮",
-      "keyColor": ""
+      "key": "╭────────────╮"
     },
     {
       "type": "memory",
-      "key": "│ {#35} Memory  {#keys} │"
+      "key": "│  Memory  {#keys} │",
+      "format": "{#38}{used} / {total}{#keys} "
     },
     {
       "type": "disk",
-      "key": "│ {#35} Disk    {#keys} │"
+      "key": "│  Disk    {#keys} │",
+      "format": "{#38}{size-used} / {size-total}{#keys} "
     },
     {
       "type": "swap",
-      "key": "│ {#35} Swap    {#keys} │"
+      "key": "│  Swap    {#keys} │",
+      "format": "{#38}{used} / {total}{#keys}"
     },
     {
       "type": "cpu",
-      "key": "│ {#35} CPU     {#keys} │"
+      "key": "│  CPU     {#keys} │",
+      "format": "{#38}{name} ({cores-logical}){#keys}"
     },
     {
       "type": "gpu",
-      "key": "│ {#35} GPU     {#keys} │"
+      "key": "│  GPU     {#keys} │",
+      "format": "{#38}{vendor} {name} ({type}){#keys}"
     },
     {
       "type": "host",
-      "key": "│ {#35}󰌢 Chasis  {#keys} │"
+      "key": "│ 󰌢 Chassis  {#keys}│"
     },
     {
       "type": "battery",
-      "key": "│ {#35} Battery {#keys} │"
+      "key": "│  Battery {#keys} │"
     },
     {
       "type": "custom",

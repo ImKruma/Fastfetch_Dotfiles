@@ -1,12 +1,11 @@
 // This config was made by Gemini, and retouched a little by me
 {
-  "$schema": "https://github.com/fastfetch-cli/fastfetch/raw/dev/doc/json_schema.json",
   "logo": {
     "type": "auto",
     "source": "$( ls ~/.config/fastfetch/png/* ~/.config/fastfetch/ascii/* | shuf -n 1)",
-    "height": 12,
+    "height": 10,
     "padding": {
-      "top": 2,
+      "top": 3,
       "left": 2
     }
   },
@@ -16,7 +15,7 @@
   "modules": [
     {
       "type": "custom",
-      "key": "╭────────── System ──────────",
+      "key": "╭────────── System ──────────···",
       "keyColor": "magenta"
     },
     {
@@ -52,28 +51,31 @@
     },
     {
       "type": "custom",
-      "key": "╰────────────────────────────",
+      "key": "╰────────────────────────────···",
       "keyColor": "magenta"
     },
     "break",
     {
       "type": "custom",
-      "key": "╭───────── Hardware ─────────",
+      "key": "╭───────── Hardware ─────────···",
       "keyColor": "cyan"
     },
     {
       "type": "cpu",
       "key": "│ {#36} CPU     {#keys} {#36}│ ➜",
+      "format": "{#38}{name} ({cores-logical}){#keys}",
       "keyColor": "cyan"
     },
     {
       "type": "gpu",
       "key": "│ {#36}󰢮 GPU     {#keys} {#36}│ ➜",
+      "format": "{#38}{vendor} {name} ({type}){#keys}",
       "keyColor": "cyan"
     },
     {
       "type": "memory",
       "key": "│ {#36} RAM     {#keys} {#36}│ ➜",
+      "format": "{#38}{used} / {total}{#keys} ",
       "keyColor": "cyan"
     },
     {
@@ -88,16 +90,8 @@
     },
     {
       "type": "custom",
-      "key": "╰────────────────────────────",
+      "key": "╰────────────────────────────···",
       "keyColor": "cyan"
-    },
-    "break",
-    {
-      "type": "colors",
-      "symbol": "rect",
-      "block": {
-        "width": 2
-      }
     }
   ]
 }
