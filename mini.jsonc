@@ -1,0 +1,60 @@
+{
+    "logo": {
+        "type": "auto",
+        "source": "$( ls ~/.config/fastfetch/png/* | shuf -n 1)",
+        "height": 10
+    },
+    "display": {
+        "separator": " "
+    },
+    "modules": [
+        "break",
+        {
+            "type": "title",
+            "key": " ",
+            "format": "{#34}╭───────────··· {host-name}'s PC ···───────────╮",
+            "keyColor": "blue"
+        },
+        {
+            "type": "os",
+            "key": "│ {icon} OS     {#keys}{#34}",
+            "format": "{#38}{name}{#keys}                  {#34}│",
+            "keyColor": "blue"
+        },
+        {
+            "type": "title",
+            "key": "│ {#34} user   {#keys}{#34}",
+            "format": "{#38}{host-name}{#keys}                        {#34}│",
+            "keyColor": "blue"
+        },
+        {
+            "type": "kernel",
+            "key": "│ {#34} kernel {#keys}{#34}",
+            "format": "{#38}{sysname} {release}{#keys}          {#34}│",
+            "keyColor": "blue"
+        },
+        {
+            "type": "uptime",
+            "key": "│ {#34}󱎫 uptime {#keys}{#34}",
+            "format": "{#38}{formatted}            {#keys}{#34} │",
+            "keyColor": "blue"
+        },
+        {
+            "type": "packages",
+            "key": "│ {#34}󰏗 pakgs  {#keys}{#34}",
+            "format": "{#38}{flatpak-all}(flatpak), {pacman}(Pacman) {#keys}   {#34}│",
+            "keyColor": "blue"
+        },
+        {
+            "type": "memory",
+            "key": "│ {#34} mem    {#keys}{#34}",
+            "format": "{#38}{used} / {total}{#keys}         {#34}│",
+            "keyColor": "blue"
+        },
+        {
+            "type": "custom",
+            "key": "╰────────────────────────────────────────╯",
+            "keyColor": "blue"
+        }
+    ]
+}
