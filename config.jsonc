@@ -67,7 +67,10 @@
       "key": "╰────────────╯",
       "keyColor": "blue"
     },
-    "break",
+// Previously... there wa a break here, but I removed it
+// so that the system info modules 
+// can be grouped together in a box, and the colors 
+// module can be separated in another box at the end
     {
       "type": "custom",
       "key": "╭────────────╮"
@@ -107,22 +110,23 @@
     },
     {
       "type": "custom",
-      "key": "╰────────────╯"
+      "key": "╰────────────╯",
     },
-    "break",
-    {
-      "type": "colors",
-      "key": " ",
-      "keyIcon": "",
-      "symbol": "circle",
-      "paddingLeft": 20,
-      "block": {
-        "width": 3,
-        "range": [
-          0,
-          15
-        ]
-      }
-    }
+
+// commented colors, uncomment if you want to use it.
+    // {
+    //   "type": "colors",
+    //   "key": " ",
+    //   "keyIcon": "",
+    //   "symbol": "circle",
+    //   "paddingLeft": 20,
+    //   "block": {
+    //     "width": 3,
+    //     "range": [
+    //       0,
+    //       15
+    //     ]
+    //   }
+    // }
   ]
 }
