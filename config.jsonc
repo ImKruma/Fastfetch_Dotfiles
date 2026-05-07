@@ -2,7 +2,7 @@
   /////===== LOGO =====/////
   "logo": {
     "type": "auto",
-    "source": "$( ls ~/.config/fastfetch/png/* ~/.config/fastfetch/ascii/* | shuf -n 1)",
+    "source": "$( ls $HOME/.config/fastfetch/png/* $HOME/.config/fastfetch/ascii/* | shuf -n 1)",
     // If you want to use Ascii only just remove the png path, and vice versa
     "height": 10,
     "padding": {
@@ -67,10 +67,9 @@
       "key": "╰────────────╯",
       "keyColor": "blue"
     },
-// Previously... there wa a break here, but I removed it
-// so that the system info modules 
-// can be grouped together in a box, and the colors 
-// module can be separated in another box at the end
+    // Previously... there was a break here, but I removed it
+    // so that the system info modules 
+    // can be grouped together in a box.
     {
       "type": "custom",
       "key": "╭────────────╮"
@@ -112,8 +111,7 @@
       "type": "custom",
       "key": "╰────────────╯",
     },
-
-// commented colors, uncomment if you want to use it.
+    // commented colors, uncomment if you want to use it.
     // {
     //   "type": "colors",
     //   "key": " ",

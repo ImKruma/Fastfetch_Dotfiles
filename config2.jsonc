@@ -2,7 +2,7 @@
 {
   "logo": {
     "type": "auto",
-    "source": "$( ls ~/.config/fastfetch/png/* ~/.config/fastfetch/ascii/* | shuf -n 1)",
+    "source": "$( ls $HOME/.config/fastfetch/png/* $HOME/.config/fastfetch/ascii/* | shuf -n 1)",
     "height": 10,
     "padding": {
       "top": 3,
